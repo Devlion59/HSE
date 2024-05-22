@@ -8,14 +8,14 @@ public class Main {
         int divisor = (int) Math.pow(10, digitsNumber /2);
 
         for (int i = 0; i < Math.pow(10, digitsNumber); i++) {
-            if (getDigitalSum(i/divisor) == getDigitalSum(i % divisor)) {
+            if (getDigitalsSum(i/divisor) == getDigitalsSum(i % divisor)) {
                 ticketsCount++;
             }
         }
         System.out.printf("Всего %d шестизначных счастливых билетов", ticketsCount);
     }
 
-    public static int getDigitalSum(int number) {
+    public static int getDigitalsSum(int number) {
         int result = 0;
         do {
             result += number % 10;
