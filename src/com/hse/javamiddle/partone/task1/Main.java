@@ -1,4 +1,4 @@
-package partOne.taskOne;
+package com.hse.javamiddle.partone.task1;
 
 public class Main {
 

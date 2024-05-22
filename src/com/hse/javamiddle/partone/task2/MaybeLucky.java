@@ -1,4 +1,4 @@
-package partOne.taskTwo;
+package com.hse.javamiddle.partone.task2;
 
 import java.util.function.Function;
 
