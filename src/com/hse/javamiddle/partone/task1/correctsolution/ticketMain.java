@@ -1,10 +1,10 @@
-package com.hse.javamiddle.partone.task1.newversion;
+package com.hse.javamiddle.partone.task1.correctsolution;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class NewMain {
+public class ticketMain {
 
     public static void main(String[] args) {
         Map<Integer, ArrayList<Integer>> numbers = new HashMap<>();
@@ -14,11 +14,10 @@ public class NewMain {
         /**
          * Принимается, что номер билета состоит из 6 цифр
          * Счастчивым билетом является тот, у которого сумма первых трех цифр равна сумме последних трех цифр
-         * Для снижения итераций вычисляем сумму цифр в числах от 1 по 999
+         * Для уменьшения итераций вычисляем сумму цифр в числах от 1 по 999
          * Максимальная сумма цифр может быть 27
          * Для хранения используем хэш-таблицу, где ключ - сумма цифр в числе, значение - список чисел
          */
-
         for (int number = 0; number < 1000; number++) {
             int numberDigitsSum = digitsSum(number);
             if (!numbers.containsKey(numberDigitsSum)){             //если ключа нет в табице,
@@ -33,7 +32,6 @@ public class NewMain {
          * а сумма цифр в числах равна, то необходимо количество чисел в каждом списке возвести в степень 2.
          * общее количество комбинаций будет равно количеству счастливых билетов.
          */
-
         for (Integer i : numbers.keySet()) {
             int length = (numbers.get(i)).size();
             count += (int) Math.pow(length, 2);

@@ -1,6 +1,6 @@
-package com.hse.javamiddle.partone.task1;
+package com.hse.javamiddle.partone.task1.simplesolution;
 
-public class Main {
+public class simpleTicketName {
 
     public static void main(String[] args) {
         int ticketsCount = 0;
