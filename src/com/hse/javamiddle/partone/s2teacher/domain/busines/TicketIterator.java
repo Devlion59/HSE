@@ -1,7 +1,5 @@
 package com.hse.javamiddle.partone.s2teacher.domain.busines;
 
-
-
 import com.hse.javamiddle.partone.s2teacher.domain.model.Ticket;
 
 import java.util.Iterator;

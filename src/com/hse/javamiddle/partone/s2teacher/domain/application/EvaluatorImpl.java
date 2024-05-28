@@ -28,17 +28,6 @@ public class EvaluatorImpl implements Evaluator {
             }
         }
 
-        /*var digits = 6;
-
-        for (var number = 0; number < Math.pow(10, digits); number++) {
-            var ticket = ticketIterator.apply(number);
-            if (!ticket.isLucky()) {
-                continue;
-            }
-
-            quantity++;
-        }*/
-
         return quantity;
     }
 }
